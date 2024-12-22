@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120746a6f126d1c45abb4c10d262d554, type: 3}
+  m_Name: FightState_BazookaGuard
+  m_EditorClassIdentifier: 
+  stateMachine: {fileID: 0}
+  fightTarget: {fileID: 0}
+  buffEventChannel: {fileID: 11400000, guid: 7b41d363bfc959b4e9a40eeb4c9dcb11, type: 2}
+  bullet: {fileID: 976136667309934651, guid: 5493584651f096f43b96265b86f698b3, type: 3}
+  shootInterval: 1.1
+  bulletSize: 0.1
+  shootSpeed: 15
+  damageRange: 4
+  damage: 1

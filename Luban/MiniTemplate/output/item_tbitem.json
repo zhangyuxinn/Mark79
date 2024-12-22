@@ -1,0 +1,98 @@
+[
+  {
+    "id": 10001,
+    "name": "步枪士兵",
+    "cost": 2,
+    "damage": 1,
+    "shootInterval": 0.7,
+    "fightRange": 3,
+    "damageRange": 0,
+    "quality": 1,
+    "GuardHP": 10,
+    "StatsGrade": 2
+  },
+  {
+    "id": 10002,
+    "name": "狙击手士兵",
+    "cost": 4,
+    "damage": 4,
+    "shootInterval": 1.2,
+    "fightRange": 6,
+    "damageRange": 0,
+    "quality": 1,
+    "GuardHP": 10,
+    "StatsGrade": 4
+  },
+  {
+    "id": 10003,
+    "name": "火箭筒士兵",
+    "cost": 4,
+    "damage": 1,
+    "shootInterval": 1.1,
+    "fightRange": 3,
+    "damageRange": 4,
+    "quality": 1,
+    "GuardHP": 10,
+    "StatsGrade": 4
+  },
+  {
+    "id": 10004,
+    "name": "机枪士兵",
+    "cost": 4,
+    "damage": 1,
+    "shootInterval": 0.4,
+    "fightRange": 4,
+    "damageRange": 0,
+    "quality": 1,
+    "GuardHP": 10,
+    "StatsGrade": 4
+  },
+  {
+    "id": 10005,
+    "name": "武装直升飞机",
+    "cost": 5,
+    "damage": 2,
+    "shootInterval": 0.8,
+    "fightRange": 4,
+    "damageRange": 0,
+    "quality": 1,
+    "GuardHP": 20,
+    "StatsGrade": 5
+  },
+  {
+    "id": 10006,
+    "name": "重型坦克",
+    "cost": 8,
+    "damage": 2,
+    "shootInterval": 0.9,
+    "fightRange": 3,
+    "damageRange": 0,
+    "quality": 1,
+    "GuardHP": 40,
+    "StatsGrade": 8
+  },
+  {
+    "id": 20001,
+    "name": "大能量水晶",
+    "cost": 0,
+    "damage": 1,
+    "shootInterval": 1.5,
+    "fightRange": 6,
+    "damageRange": 0,
+    "quality": 1,
+    "GuardHP": 100,
+    "StatsGrade": 17.5
+  },
+  {
+    "id": 20002,
+    "name": "小能量水晶",
+    "cost": 0,
+    "damage": 1,
+    "shootInterval": 1.5,
+    "fightRange": 5,
+    "damageRange": 0,
+    "quality": 1,
+    "GuardHP": 50,
+    "StatsGrade": 7
+  }
+]

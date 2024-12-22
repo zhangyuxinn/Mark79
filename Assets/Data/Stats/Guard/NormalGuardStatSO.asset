@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3faa8a9112a154e85ba131a1a9877d, type: 3}
+  m_Name: NormalGuardStatSO
+  m_EditorClassIdentifier: 
+  health: 5
+  fightState: {fileID: 11400000, guid: e8807e8824d7e584b97d17aeeaeea910, type: 2}
+  guardType: 1
+  callCost: 2
