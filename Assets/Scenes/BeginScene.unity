@@ -461,8 +461,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41, y: -355}
-  m_SizeDelta: {x: 827, y: 173}
+  m_AnchoredPosition: {x: -34.6487, y: -336.6519}
+  m_SizeDelta: {x: 839.7025, y: 209.6962}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &497406762
 MonoBehaviour:
@@ -540,7 +540,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ef3bf214f17af7d47820293bf666ef2a, type: 3}
+  m_Sprite: {fileID: 336436765, guid: ed04d0a88724dfa45ad890446e398228, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -606,7 +606,7 @@ MonoBehaviour:
   sleepAudio: {fileID: 8300000, guid: 49549be1918c34647b8aa720f9e9ea4b, type: 3}
   btnScaleCount: 10
   buttonStart: {fileID: 1207256589}
-  mainScene: MainScene
+  mainScene: MenuMap
   panelBegin: {fileID: 314387323}
   talkStartFight: {fileID: 0}
   mainPanel: {fileID: 0}

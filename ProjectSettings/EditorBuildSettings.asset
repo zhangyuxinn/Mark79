@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GQ-01.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/MenuMap/MenuMap.unity
+    guid: 71a06befb484bee4892a6d3e0cfc700f
   m_configObjects: {}
