@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using UnityEngine;
 using DG.Tweening;
 using System.Collections;
@@ -220,3 +220,4 @@ public class CardVisual : MonoBehaviour
 
 }
 
+*/

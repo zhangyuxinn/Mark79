@@ -1,4 +1,4 @@
-
+/*
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -190,3 +190,4 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
     }
 }
 
+*/
