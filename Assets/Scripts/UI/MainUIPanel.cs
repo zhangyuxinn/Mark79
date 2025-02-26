@@ -23,13 +23,15 @@ public class MainUIPanel : UIBasePanel//这行定义了一个名为MainUIPanel�
     [SerializeField] private GuardChangeEventChannel statChangeEventChannelPlayerKill;
     [SerializeField] private StatChangeEventChannel statChangeEventChannelPlayerMana;
     //这些是序列化的私有字段，用于存储事件通道的引用，这些事件通道可能用于在不同部分的代码之间传递事件。
-    public void BtnCallGuard(int index)
+    public  void BtnCallGuard(int index)
     {
         callGuardEventChannel.Broadcast(index,Team.A);
         callGuardEventChannel.Broadcast(index,Team.B);
     }
     //这是一个公共方法，当"调用守卫"按钮被点击时调用。
     //它通过callGuardEventChannel广播守卫调用事件，为两个队伍（A和B）
+
+    //修改:将逻辑改为卡片拖动结束后，广播生成守卫事件。注释这里的按钮函数
     private void Start()
     {
         Init();

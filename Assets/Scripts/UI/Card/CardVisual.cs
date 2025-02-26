@@ -14,6 +14,7 @@ public class CardVisual : MonoBehaviour
 
     [Header("Card")]
     public Card parentCard; // 逻辑卡片对象，控制交互行为
+    public int index;//卡片守卫索引
     private Transform cardTransform; // 逻辑卡片的 Transform
     private Vector3 rotationDelta; // 旋转偏移量
     Vector3 movementDelta; // 运动偏移量
@@ -56,6 +57,10 @@ public class CardVisual : MonoBehaviour
     private float curveRotationOffset; // 旋转角度偏移
     private Coroutine pressCoroutine; // 长按协程（未使用）
 
+    [Header("事件参数")]
+    [SerializeField] private CallGuardEventChannel callGuardEventChannel;
+    MainUIPanel mainUIPanelInstance;
+
     private void Start()
     {
         // 初始化时没有额外逻辑
@@ -71,6 +76,7 @@ public class CardVisual : MonoBehaviour
         cardTransform = target.transform; // 获取逻辑卡片 Transform
         canvas = GetComponentInParent<Canvas>(); // 获取 Canvas 组件
         normalPosition = target.transform.position;//获取常驻位置
+        mainUIPanelInstance = FindObjectOfType<MainUIPanel>();//获取MainUIPanel
         collider1 = GetComponent<Collider2D>();
         GameObject temp = GameObject.Find("BackCard");
         if(temp != null)
@@ -173,6 +179,14 @@ public class CardVisual : MonoBehaviour
             transform.DOMove(normalPosition, 0.5f).SetEase(Ease.OutQuad);
 
         }
+        else
+        {
+            transform.position = normalPosition;
+            mainUIPanelInstance.BtnCallGuard(index);
+            //BtnCallGuard(index);
+
+
+        }
         bool IsRectOverlapping(RectTransform rt1, RectTransform rt2)
         {
             Rect worldRect1 = GetWorldRect(rt1);
@@ -216,5 +230,11 @@ public class CardVisual : MonoBehaviour
     {
         if (scaleAnimations)
             transform.DOScale(scaleOnSelect, scaleTransition).SetEase(scaleEase);
+    }
+
+    public void BtnCallGuard(int index)
+    {
+        callGuardEventChannel.Broadcast(index, Team.A);
+        callGuardEventChannel.Broadcast(index, Team.B);
     }
 }

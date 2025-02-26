@@ -18,7 +18,7 @@ public class GroupLeader : MonoBehaviour
     private PlayerController playerController;
     [SerializeField]private CallGuardEventChannel callGuard3EventChannel;
 
-    [SerializeField] private AllGuardPrefab allGuardPrefab;
+    [SerializeField] private AllGuardPrefab allGuardPrefab; //所有士兵预制体的集合（从中实例化士兵）
 
     [SerializeField] private float forceFront;
 
@@ -39,9 +39,9 @@ public class GroupLeader : MonoBehaviour
     {
 
         UpdateAverage();
-        FLock();
+        FLock();//调整编队
     }
-    private bool InSight(GameObject other)
+    private bool InSight(GameObject other)//计算士兵是否在GroupLeader的视线内
     {
         return Vector3.Distance(transform.position, other.transform.position) < guardRange;
     }
@@ -82,7 +82,7 @@ public class GroupLeader : MonoBehaviour
             
         }
     }
-    void UpdateAverage()
+    void UpdateAverage()//更新groupLeader的位置
     {
         averagePosition=transform.position;
 
@@ -90,8 +90,9 @@ public class GroupLeader : MonoBehaviour
 
     private void OnCallGuard(int guardIndex, Team tmpTeam)
     {
-        if(tmpTeam!=playerController.team)return;
+        if(tmpTeam!=playerController.team)return;//判断角色归属队伍与当前队伍是否相同
         GuardBase tmpGuardBase= allGuardPrefab.guardPrefab[guardIndex].GetComponent<GuardBase>();
+        //获取预制件中对应士兵的预制件
         Debug.Log(tmpGuardBase.name);
         if (!playerController.UseMana(tmpGuardBase.GetCost()))
         {
@@ -100,10 +101,11 @@ public class GroupLeader : MonoBehaviour
         }
         AudioManager.Instance.PlaySingleSound(callGuardAudioEffect);
         GameObject instantiateGuard = Instantiate(allGuardPrefab.guardPrefab[guardIndex], transform);
+        //用于克隆士兵预制件，并使其生成在当前的GroupLeader下
         instantiateGuard.layer = gameObject.layer;
         ChangeLayer(instantiateGuard.transform, gameObject.layer);
         tmpGuardBase.groupLeader = this;
-        guards.Add(instantiateGuard.GetComponent<GuardBase>());
+        guards.Add(instantiateGuard.GetComponent<GuardBase>());//将士兵加入当前士兵列表中
     }
 
     private void ChangeLayer(Transform transform, int layerIndex)

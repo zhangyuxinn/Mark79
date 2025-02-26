@@ -19,7 +19,8 @@ public class TwoParameterEventChannel<T1,T2> : ScriptableObject
 
     public void RemoveListener(Action<T1,T2> action)
     {
-        Delegate += action;
+        Delegate -= action;
+        
     }
     
 
