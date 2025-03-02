@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 2311633802649716862}
   - component: {fileID: 7938634299188547658}
   m_Layer: 5
-  m_Name: Call0 (1)
+  m_Name: Card1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -493,7 +493,7 @@ GameObject:
   - component: {fileID: 331192976018312888}
   - component: {fileID: 9035482543025968562}
   m_Layer: 5
-  m_Name: Call0
+  m_Name: Card0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1381,7 +1381,7 @@ GameObject:
   - component: {fileID: 7268878518538958481}
   - component: {fileID: 1228727046284231053}
   m_Layer: 5
-  m_Name: Call0 (2)
+  m_Name: Card2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1859,6 +1859,8 @@ GameObject:
   - component: {fileID: 1167877299719151840}
   - component: {fileID: 4970400157146924399}
   - component: {fileID: 8598605390444354465}
+  - component: {fileID: 8249505398240099879}
+  - component: {fileID: 4052963176498140297}
   m_Layer: 5
   m_Name: BackCard
   m_TagString: Untagged
@@ -1925,6 +1927,46 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!223 &8249505398240099879
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3328631844560843879}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &4052963176498140297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3328631844560843879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 1
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &3855623434543895411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,7 +2115,7 @@ GameObject:
   - component: {fileID: 638066500055792657}
   - component: {fileID: 3412790193951587756}
   m_Layer: 5
-  m_Name: Call0 (5)
+  m_Name: Card5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2343,7 +2385,7 @@ GameObject:
   - component: {fileID: 3245765429072392520}
   - component: {fileID: 3245664837484475927}
   m_Layer: 5
-  m_Name: Call0 (4)
+  m_Name: Card4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2900,7 +2942,7 @@ GameObject:
   - component: {fileID: 8629225886137189845}
   - component: {fileID: 866148570321804466}
   m_Layer: 5
-  m_Name: Call0 (3)
+  m_Name: Card3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

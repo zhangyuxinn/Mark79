@@ -142,33 +142,37 @@ public class GameMode : MonoBehaviour
 
     public void BeginGame()
     {
-        panelBegin.SetActive(false);
+        //panelBegin.SetActive(false);
         AudioManager.Instance.PlayMultipleSound(clickStart);
+        SceneManager.LoadScene("MenuMap");
     }
+    /* 
+   public void AfterStartBtn()
+   {
+       AudioManager.Instance.PlayMultipleSound(clickRedButton);
+         if (btnScaleCount != 1)
+         {
+             btnScaleCount--;
+             buttonStart.transform.localScale = 
+                 new Vector3((float)btnScaleCount / 1,
+                     (float)btnScaleCount / 1,
+                     (float)btnScaleCount / 1);
+         }
+         else
+         {
+             gameProcess = GameProcess.One;
+             AudioManager.Instance.PlayBackgroundMusic(processOneBackgroundMusic);
+             StartCoroutine(StartProcessBackgroundMusic());
+             AudioManager.Instance.StopAllMultipleSound();
+             //SceneManager.LoadScene(mainScene);
 
-    public void AfterStartBtn()
-    {
-        AudioManager.Instance.PlayMultipleSound(clickRedButton);
-        if (btnScaleCount != 1)
-        {
-            btnScaleCount--;
-            buttonStart.transform.localScale = 
-                new Vector3((float)btnScaleCount / 1,
-                    (float)btnScaleCount / 1,
-                    (float)btnScaleCount / 1);
-        }
-        else
-        {
-            gameProcess = GameProcess.One;
-            AudioManager.Instance.PlayBackgroundMusic(processOneBackgroundMusic);
-            StartCoroutine(StartProcessBackgroundMusic());
-            AudioManager.Instance.StopAllMultipleSound();
-            SceneManager.LoadScene(mainScene);
+             //更改了跳转场景
 
 
-        }
+         
+    SceneManager.LoadScene("MenuMap");
     }
-
+    }*/
     IEnumerator StartProcessBackgroundMusic()
     {
         yield return new WaitForSeconds(0.1f);
